@@ -13,4 +13,4 @@ Chaque dossier contient 3 fichiers :
 
 ## Aide
 
-[Votre meilleur ami](https://www.google.fr/?target="_blank")
+[Votre meilleur ami](https://www.google.fr/?target=_blank)
