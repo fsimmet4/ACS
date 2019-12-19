@@ -1,5 +1,5 @@
-let form = document.querySelector('form');
-let restext = document.querySelector('.res');
+const form = document.querySelector('form');
+const  restext = document.querySelector('.res');
 
 form.addEventListener("submit", function(e){
     
@@ -8,9 +8,12 @@ form.addEventListener("submit", function(e){
     let resa = document.querySelector("#date").value
 
     let age = 2019 - resa;
+
     reponse = "Bonjour " + res + " , tu as " + age + " ans.";
+
     if(age < 18){
         reponse += " Encore quelques années avant la majorité, courage!"
     }
+    
     restext.innerHTML = reponse;
 })
