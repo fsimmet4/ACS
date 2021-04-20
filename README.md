@@ -3,7 +3,7 @@
 
 ## Contenu
 Vous trouverez ici les exercices js ainsi que leurs corrigés abordés lors de la formation.
-Les corrigé que vous trouverez ne sont pas l'unique solution possible, ni forcément la meilleure
+Les corrigés que vous trouverez ne sont pas l'unique solution possible, ni forcément la meilleure
 
 ### Organisation
 Chaque dossier contient 3 fichiers :
