@@ -2,7 +2,10 @@
 // Formulaire
 const form = document.querySelector('form');
 // Div qui contiendra la réponse
-const  restext = document.querySelector('.res');
+const restext = document.querySelector('.res');
+
+// Récupérer dynamiquement l'année en cours
+const currentYear = new Date().getFullYear();
 
 
 // Ajout de l'évènement submit au formulaire
@@ -15,11 +18,11 @@ form.addEventListener("submit", function(e){
     let resa = document.querySelector("#date").value
 
     // Calcul de l'age 
-    let age = 2019 - resa;
+    let age = currentYear - resa;
 
     // Concaténation de la réponse avec les variables récupérées
     // Cette technique fonctionne aussi : reponse = "Bonjour " + res + " , tu as " + age + " ans.";
-    reponse =  `Bonjour ${res} , tu as ${ans} ans.`
+    reponse =  `Bonjour ${res}, tu as ${age} ans.`
 
     // Ajout de la condition si l'age est inférieur a 18
     if(age < 18){
@@ -27,5 +30,6 @@ form.addEventListener("submit", function(e){
     }
 
     // Insertion de la réponse dans le Html
-    restext.innerHTML = reponse;
+    restext.childNodes[0].nodeValue = reponse;
+    
 })
